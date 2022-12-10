@@ -1,0 +1,298 @@
+
+    body{
+        font-family: 'Open Sans', sans-serif;
+        background-color: #8171c5;
+    }
+     /* navigation data */
+       .main-nav{
+        background-color: #4629c6;
+    }
+    .main-nav a{
+        font-weight: 600;
+        text-transform: uppercase;
+        /* padding-right:50px; */
+        transition: color 0.5s 0s ease-in-out;
+    }
+    .main-nav a:hover{
+        color: #000000;
+        background-color: #8171c5;
+    }
+    .nav-data{
+        
+        color: white;
+
+    }
+    .nav-data :hover{
+        color: #8b8b8b;
+    }
+    .nav {
+        --bs-nav-link-hover-color: #000000;
+    }
+    .d-flex{
+     height: 30px;
+     margin-top: 5PX;
+    
+    }
+    .nav-image{
+        height: 30px;
+        position: absolute;
+        right:35px;
+        top:5px;
+    }
+    .btn{
+        border:0px;
+        
+    }
+    /* dasdfdfsdfsdfsdfsdfds */
+    .f-size{
+        height:480px;
+        width:320px;
+        border:solid 1px black;
+        border-radius: 10px;
+        margin:0px auto;
+        margin-top: 100px;
+        position: relative;
+        background-color: rgb(240, 240, 240);
+        z-index: 2;
+    }
+
+    header p{
+        float:left;
+        font-size: 20px;
+        font-weight: 400;
+        margin-left: 10px;
+        margin-top:20px;
+
+    }
+    header p span{
+        color:rgb(78, 78, 78);
+        font-weight: 600;
+    }
+    header img{
+        float:right;
+        height:40px;
+        width:40px;
+        margin-top: 20px;
+        margin-right: 10px;
+        
+    }
+    .clear{
+        clear:both;
+    }
+    .main-box{
+        display: flex;
+    }
+    #spends-box{
+        height:265px;
+        width:228px;
+        background-color: white;
+        border-radius: 15px;
+        border:rgb(204, 204, 204);
+        margin-top: 70px;
+        margin-right:10px;
+        margin-left: 10px;
+        padding: 0px 10px;
+        box-shadow: 1px 1px  10px rgb(167, 167, 167);
+        position: relative;
+        z-index: 1;
+    }
+    #spends{
+        margin:0px auto;
+        /* border:solid 1px black; */
+        width:200px;
+        text-transform: uppercase;
+    }
+    #spends p{
+        padding-top: 10px;
+        height:10px;
+    }
+    #spends span{
+        font-weight: 800;
+        font-size: 25px;
+    } 
+      #car-icon img{
+        height:20px;
+        width:25px;
+        margin-top: 15px;
+        float: left;
+        padding-left: 10px;
+    }
+      #car-icon p{
+        font-size: 15px;
+        font-weight: 400;
+        width:150px;
+        float: right;
+        padding-right: 5px;
+        text-transform: capitalize;
+    }
+      #emoji-icon img{
+        height:30px;
+        width:35px;
+        margin-top: 15px;
+        float: left;
+        padding-left: 2px;
+    }
+      #emoji-icon p{
+        font-size: 15px;
+        font-weight: 400;
+        width:150px;
+        float: right;
+        padding-right: 5px;
+        text-transform: capitalize;
+    }
+    .fp-btn{
+        border:solid 0px black;
+        border-radius: 50%;
+        background-color:#624dc2;
+        margin:0px auto;
+        margin-top: 20px;
+        width:35px;
+        height:35px;
+    }
+    .fp-btn img{
+        height:25px;
+        width:25px;
+        margin-top: 5px;
+        margin-left: 4px;
+    }
+    
+/* :::::Card-style::::: */
+.login-box{
+    border:solid 0px black;
+    margin-top: 100px;
+    
+}
+
+.login-text{
+    font-size: 15px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.text-box{
+    
+    width:250px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    border:solid 0.5px rgb(123, 122, 122);
+    border-radius: 8px;
+}
+.submit-box{
+    width:60px;
+    border:solid 0px black;
+    margin: 0px auto;
+}
+.btn-box{
+    background-color: #624dc2;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+    border:none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.btn-box:hover{
+    background-color: #4629c6;
+}
+
+/* ::::: card-js::::: */
+
+.setting-icon{
+    height: 25px;
+    width:25px;
+    margin-top: 23px;
+}
+.card-main-box{
+    border:solid 0.5px rgb(133, 133, 133);
+    height:300px;
+    border-radius: 20px;
+    background-color: #ebebeb;
+    width:85%;
+    margin: 0px auto;
+    margin-top: 20px;
+    box-shadow: 1px 1px  10px rgb(167, 167, 167);
+}
+.sub-box{
+    border:solid 0px red;
+    width:100%;
+    height: 150px;
+    border-radius: 20px;
+    background-color: #624dc2;
+    color:white;
+}
+.sub-box p{
+    margin:0px 0 0 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 13px;
+    padding-top: 10px;
+}
+.sub-box h4{
+    margin:5px 0 0 20px;
+    font-size: 25px;
+    float: left;
+}
+.design-card{
+    float: right;
+    height:100px;
+    width:80px;
+    margin-top: -20px;
+    margin-right: 10px;
+}
+.sub-box spam{
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 15px;
+    /* float: left; */
+}
+.visa-logo{
+    height: 35px;
+    width:90px;
+    float: right;
+    margin: 3px 10px 0 0 ;
+}
+
+/* entery page */
+.g-size{
+    height:200px;
+    width:90%;
+    border:solid 1px black;
+    border-radius: 10px;
+    margin:0px auto;
+    margin-top: 100px;
+    position: relative;
+    background-color: rgb(240, 240, 240);
+    z-index: 2;
+    box-shadow: 1px 1px  10px rgba(0, 0, 0, 0.599)
+}
+.card-main-box-2{
+    border:solid 0.5px rgb(133, 133, 133);
+    height:500px;
+    border-radius: 20px;
+    background-color: #ebebeb;
+    width:85%;
+    margin: 0px auto;
+    margin-top: 20px;
+    box-shadow: 1px 1px  10px rgb(167, 167, 167);
+}
+
+.sub-box-2
+{
+    background: linear-gradient(#624dc2, #ebebeb);
+}
+.sub-box-2 table,th,td{
+    border:solid 1px rgb(119, 119, 119);
+}
+.sub-box-2 table a{
+    color:black;
+}
+.sub-box-2 table{
+    color:rgb(75, 75, 75);
+    text-transform: uppercase;
+    font-weight:600;
+    font-size: 15px;
+}

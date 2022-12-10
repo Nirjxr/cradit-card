@@ -1,0 +1,98 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card detail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="/static/css/style.css" rel="stylesheet" type="text/css">
+    </head>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous">
+
+        function checkdata(from)
+        {
+            var password=form.passwordbox.value;
+            var error=[];
+
+            if(checkvalue(passwordbox)==false)
+            {
+                error[error.length]="Enter valid password"
+                
+            }
+           
+            if(error.length>0){
+                showError(error);
+                return false;
+            }
+            return true;
+        }
+        function checkvalue(value)
+        {
+            if(value.length<6 || value.length>=25)
+            {
+                return false;
+            }
+            return true;
+        }
+        function showError(error)
+        {
+            var i;
+            var msg="some problem";
+            var num=0;
+
+            for(i=0;i<error.length;i++)
+            {
+                num=i+1;
+                msg+=num + ". " + error[i] +"\n";
+            }
+            document.getElementById("text-here").innerHTML=msg;
+        }
+
+        <!-- function checkdata(form)
+        {
+            var password=getElementbyId("passwordbox").value;
+            if(password =! '')
+            {
+
+            }
+            else
+            {
+                alert("All Fields Are Require");
+                return false;
+            }
+        } -->
+    </script>
+
+<body>
+    {% include 'title.html' %}
+    <div class=f-size>
+        <header>
+            <p>LOGIN <span>here</span></p>
+            <img src={% static 'images/face.png' %} alt="">
+        </header>
+        <div class="clear"></div>
+        <form class="login-box" action="" method="post" onsubmit="return checkdata(this)">
+            {% csrf_token %}
+            <label class="login-text">Mail-Id/Username</label>
+            <input type="email" class="text-box" id="email" name="email">
+           <span id="text-here"></span>
+            <lable class="login-text">Password</lable>
+            <input type="password" class="text-box" id="passwordbox" name="password">
+            <span id="text-here"></span>
+            <div class="submit-box"><input type="submit" class="btn btn-primary btn-box"></div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card detail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link href="/static/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    {% include 'title.html' %}
+    <div class=f-size>
+        <header>
+            <p>Hi <span>here</span></p>
+            <img src={% static 'images/face.png' %} alt="">
+        </header>
+        <div class="clear"></div>
+        <div class="main-box">
+            <div id="spends-box">
+                <div id="spends">
+                    <p>may spends</p>
+                    <span>$732</span>
+                </div>
+                <div id="car-icon">
+                    <img src={% static 'images/car.jpg' %} alt="">
+                    <p>paid $11 to hp petrol pump</p>
+                </div>
+                <div class="clear"></div>
+                <div id="emoji-icon">
+                    <img src={% static 'images/emoji1.jpg' %} alt="">
+                    <p>cashback of 0.5$ on scratch card</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div id="spends-box">
+                <div id="spends">
+                    <p>june spends</p>
+                    <span>$945</span>
+                </div>
+                <div id="car-icon">
+                    <img src={% static 'images/car.jpg' %} alt="">
+                    <p>paid $14 to dairy-don</p>
+                </div>
+                <div class="clear"></div>
+                <div id="emoji-icon">
+                    <img src={% static 'images/emoji1.jpg' %} alt="">
+                    <p>cashback of 1$ on scratch card</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="fp-btn"> <a href="login-card.html"><img src={% static 'images/fingreptint.svg' %} alt=""></a></div>
+        
+    </div>
+</body>
+
+</html>
