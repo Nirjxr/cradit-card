@@ -43,6 +43,50 @@
         border:0px;
         
     }
+    /* footer - part  */
+
+    .main-footer
+    {
+        margin-top: 80px;
+        height: 360px;
+        text-transform: uppercase;
+        background-color: #4629c6;
+        font-weight: 600;
+        color: white;
+    }
+    
+    .hr1
+    {
+        width: 1000px;
+    }
+    
+    .pic1 img
+    {
+        height: 90px;
+    }
+    
+    .footer-icon
+    {
+        border: solid 1.5px white;
+        border-radius: 50%;
+        padding: 6px;
+        height: 40px;
+        transition: all 0.5s linear 0s;
+    }
+    
+    .footer-icon-svg
+    {
+        width: 0%;
+        padding: 0px 25px;
+    }
+
+    .footer-icon:hover
+    {
+        height: 50px;
+        background-color: #8171c5;
+    }
+
+
     /* dasdfdfsdfsdfsdfsdfds */
     .f-size{
         height:480px;
@@ -220,6 +264,8 @@
     border-radius: 20px;
     background-color: #624dc2;
     color:white;
+    
+    animation: name 1s 2s ese
 }
 .sub-box p{
     margin:0px 0 0 20px;
