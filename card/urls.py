@@ -25,5 +25,6 @@ urlpatterns = [
     path('editdata/<id>',views.EditData),
     path('home/',views.carddetails),
     path('balance/',views.balance),
+    path('about-us/',views.AboutUs),
     
 ]

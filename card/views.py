@@ -39,3 +39,6 @@ def EditData(request,id):
     data=UserInfo.objects.get(id=id) 
     user={'data':data}           
     return render(request,'Edit.html',user)
+
+def AboutUs(request):
+    return render(request,'aboutus.html')
