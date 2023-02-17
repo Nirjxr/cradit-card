@@ -6,15 +6,9 @@ from login.models import UserInfo
 def carddetails(request):
     return render(request,'card-detail.html');
 
-def login(request):
-    if request.method=='POST':
-        user=request.POST['email']
-        password=request.POST['password']
-        obj=UserInfo(email=user,password=password)
-        obj.save()
-        return redirect('/addentry/')
-    return render(request,'login-card.html');
-
+def MainPage(request):
+    return render(request,'first-page.html')
+    
 def balance(request):
     return render(request,'balance.html');
 
@@ -22,6 +16,14 @@ def Entry(request):
     item=UserInfo.objects.all()
     data={'item':item}
     return render(request,'Entry.html',data)
+
+def Login(request):
+    if request.method=='POST':
+        user=request.POST['email']
+        password=request.POST['password']
+        obj=UserInfo(email=user,password=password)
+        obj.save()
+        return redirect('/addentry/')
 
 def DeletData(request,id):
     data=UserInfo.objects.get(id=id)

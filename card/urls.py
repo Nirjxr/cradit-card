@@ -19,7 +19,8 @@ from card import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.login),
+    path('',views.MainPage),
+    path('login/',views.Login),
     path('addentry/',views.Entry),
     path('deletdata/<id>',views.DeletData),
     path('editdata/<id>',views.EditData),

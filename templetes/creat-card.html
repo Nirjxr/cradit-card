@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script>
+        function checkdata(form){
+            var num=form.ccnumber.value;
+            var age=form.age.value;
+            if(checkage(age)==false)
+            {
+                 return false;
+            }
+            if(checknumber(num)==false){
+            return false;
+            }
+        return true;
+        }
+        function checknumber(value)
+        {
+            if(isNaN(value))
+            {
+                alert("please Enter only Numeric value");
+                return false;
+            }
+            else if(value.length!=10)
+                {
+                    alert("numbers must be in 10 digit")
+                    return false;	
+                }
+                return true;                
+        }
+        function checkage(value)
+        {
+            
+            if(isNaN(value))
+            {
+                //alert("please enter number in age section");
+                document.getElementById("ccage").innerHTML="<br>only number allowed"
+                document.getElementById("ccage").style.color="red"
+                return false;
+            }
+            else if(value<18)
+            {
+               // alert("age must be in above 18");
+               document.getElementById("ccage").innerHTML="<br>age must be in above 18"
+                document.getElementById("ccage").style.color="red" 
+               return false;
+            }
+        }
+        function clearblock()
+        {
+            document.getElementById("ccage").innerHTML=" "
+        }
+        function checkpassword(data){
+            
+            let password=document.getElementById('ccpass').value;
+           document.getElementById('ccpassword').innerHTML=password;
+           // document.getElementById('cccheck').innerHTML="password strength";
+            let strongPassword = new RegExp('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})')
+            if(password.match(strongPassword))
+            {
+
+                document.getElementById('cccheck').innerHTML="</br>Strong password";
+                document.getElementById('cccheck').style.color="green";
+            }
+            else{
+                document.getElementById('cccheck').innerHTML="</br>Weak Password";
+                document.getElementById('cccheck').style.color="red";
+            }
+       
+            
+            
+        }
+
+    </script>
+    <link rel="stylesheet" href="card-style.css">
+</head>
+<body>
+    <div class="container cc-main-box">      
+        <form class="row cc-sub-box" name="nikkForm" action="www.youtube.com" method="post" onsubmit="return checkdata(this)">
+            <div class="col-sm-3 img-box">    
+            </div>
+            <div class="col-sm-7 cc-right-box">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>registration-form</h1>
+                    </div>
+                    <div class="col-lg-6">
+                        <p>first name</p>
+                        <input type="text" class="cc-input-box" placeholder="Please Enter Your Name" required="required">
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <p>last name</p>
+                        <input type="text" class="cc-input-box"placeholder="last name " required="required">
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <p>age(only text)</p>
+                        <input type="text" class="cc-input-box" placeholder="18" size="2" name="age" required="required" oninput="clearblock()"><small id="ccage"></small>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <p>number</p>
+                        <input type="text" class="cc-input-box" placeholder="+91 xxxxx-xxxxx" name="ccnumber" required="required">
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <p>lanline-number(optional)</p>
+                        <input type="text" class="cc-input-box" placeholder="+911 xxx-xxx-xxxx">
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <p>E-mail</p>
+                        <input type="email" class="cc-input-box" placeholder="xyz@gmail.com" required="required">
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <p>Country</p>
+                        <select type="text" class="cc-input-box" placeholder="Please Enter Your">
+                            <option>india</option>
+                            <option>pakistan</option>
+                            <option>chin</option>
+                            <option>north-america</option>
+                            <option>south-america</option>
+                            <option>africa</option>
+                            <option>north-corea</option>
+                            <option>south-corea</option>
+                            <option>indonatioa</option>
+                            <option>russia</option>
+                        </select>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <p id="ccpassword">password</p>
+                        <input type="password" class="cc-input-box" required="required" name="ccpass" id="ccpass" oninput="return checkpassword(this)"><i id="cccheck"></i>
+                        <span id="ccpasstext"></span>
+                    </div>
+                    <div class="col-lg-12 cc-radio-main-box">
+                        <p>Gender</p>
+                        <input type="radio" class="cc-radio-box" checked="checked"id="cc-radio-f-box" value="Male" name="gen">Male
+                        <input type="radio" class="cc-radio-box" value="Female" name="gen">Female
+                        <input type="radio" class="cc-radio-box" value="Other" name="gen">Other
+                        <input type="radio" class="cc-radio-box" value="Prefer" name="gen">Prefer Only To Say
+                    </div>
+                    <div class="col-lg-12">
+                        <input class="btn btn-primary" id="cc-button" type="submit" value="next step">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
