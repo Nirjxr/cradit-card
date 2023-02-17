@@ -421,7 +421,7 @@
     /* width:27%; */
     margin:0px;
     padding: 0px;
-    background: url("image/CC-IMG.jpg") no-repeat;
+    background: url("../image/CC-IMG.jpg") no-repeat;
     background-size: cover;
 
 }
@@ -505,7 +505,7 @@
     .img-box{
 
         height: 200px;
-        background: url("image/cc-img-2.png") no-repeat;
+        background: url("../image/cc-img-2.png") no-repeat;
         background-size: cover;
     
     }
@@ -517,12 +517,12 @@
   /* --------first page---------- */
   @font-face {
     font-family: 'rubik';
-    src: url("image/Rubik.ttf");
-    local:url("image/Rubik.ttf");
+    src: url("../font/Rubik.ttf");
+    local:url("../font/Rubik.ttf");
   }
 
 .img-1-box{
-    background: url("image/main-page-img-1.svg") no-repeat;
+    background: url("../image/main-page-img-1.svg") no-repeat;
     background-size: cover;
     border:solid 0px black;
     
@@ -566,7 +566,7 @@
 }
 
 .img-2-box{
-    background: url("image/upi-desktop.svg") no-repeat;
+    background: url("../image/upi-desktop.svg") no-repeat;
     background-size: cover;
     border:solid 0px black;
     height:600px;
@@ -586,7 +586,7 @@
     border:solid 0px black;
 }
 .img-3-box{
-    background: url("image/borrow-desktop.svg") no-repeat;
+    background: url("../image/borrow-desktop.svg") no-repeat;
     background-size: cover;
     border:solid 0px black;
     height:600px;
@@ -606,7 +606,7 @@
     border:solid 0px black;
 }
 .img-4-box{
-    background: url("image/mini-desktop.svg") no-repeat;
+    background: url("../image/mini-desktop.svg") no-repeat;
     background-size: cover;
     border:solid 0px black;
     height:600px;

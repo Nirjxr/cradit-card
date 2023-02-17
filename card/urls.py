@@ -27,5 +27,6 @@ urlpatterns = [
     path('home/',views.carddetails),
     path('balance/',views.balance),
     path('about-us/',views.AboutUs),
+    path('Registartion/',views.Registartion),
     
 ]

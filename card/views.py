@@ -18,13 +18,13 @@ def Entry(request):
     return render(request,'Entry.html',data)
 
 def Login(request):
-    if request.method=='POST':
-        user=request.POST['email']
-        password=request.POST['password']
-        obj=UserInfo(email=user,password=password)
-        obj.save()
-        return redirect('/addentry/')
-
+    # if request.method=='POST':
+    #     user=request.POST['email']
+    #     password=request.POST['password']
+    #     obj=UserInfo(email=user,password=password)
+    #     obj.save()
+    #     return redirect('/addentry/')
+    return render(request,'login-card.html')
 def DeletData(request,id):
     data=UserInfo.objects.get(id=id)
     data.delete()
@@ -44,3 +44,7 @@ def EditData(request,id):
 
 def AboutUs(request):
     return render(request,'aboutus.html')
+
+
+def Registartion(request):
+    return render(request,'creat-card.html')
