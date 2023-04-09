@@ -28,5 +28,6 @@ urlpatterns = [
     path('balance/',views.balance),
     path('about-us/',views.AboutUs),
     path('Registartion/',views.Registartion),
+    path('submitted-data/',views.submitted),
     
 ]

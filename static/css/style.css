@@ -10,13 +10,16 @@
     .main-nav a{
         font-weight: 600;
         text-transform: uppercase;
-        /* padding-right:50px; */
+        padding-right:50px;
         transition: color 0.5s 0s ease-in-out;
+        flex: 0 0 auto;
+        width: 10.666667%;
     }
     .main-nav a:hover{
         color: #000000;
         background-color: #8171c5;
     }
+ 
     .nav-data{
         
         color: white;
@@ -50,7 +53,7 @@
         margin-top: 80px;
         height: 360px;
         text-transform: uppercase;
-        background-color: #4629c6;
+        background-color:#624dc2;
         font-weight: 600;
         color: white;
     }
@@ -345,7 +348,8 @@
 
 /* about-us page */
 .about-us-bg-color{
-    background-color: #ae9bff;
+    background-color: #ffffff;
+
 }
 .about-us{
     text-align: center;
@@ -421,7 +425,7 @@
     /* width:27%; */
     margin:0px;
     padding: 0px;
-    background: url("../image/CC-IMG.jpg") no-repeat;
+    background: url("../images/CC-IMG.jpg") no-repeat;
     background-size: cover;
 
 }
@@ -505,7 +509,7 @@
     .img-box{
 
         height: 200px;
-        background: url("../image/cc-img-2.png") no-repeat;
+        background: url("../images/cc-img-2.png") no-repeat;
         background-size: cover;
     
     }
@@ -522,7 +526,7 @@
   }
 
 .img-1-box{
-    background: url("../image/main-page-img-1.svg") no-repeat;
+    background: url("../images/main-page-img-1.svg") no-repeat;
     background-size: cover;
     border:solid 0px black;
     
@@ -566,7 +570,7 @@
 }
 
 .img-2-box{
-    background: url("../image/upi-desktop.svg") no-repeat;
+    background: url("../images/upi-desktop.svg") no-repeat;
     background-size: cover;
     border:solid 0px black;
     height:600px;
@@ -586,7 +590,7 @@
     border:solid 0px black;
 }
 .img-3-box{
-    background: url("../image/borrow-desktop.svg") no-repeat;
+    background: url("../images/borrow-desktop.svg") no-repeat;
     background-size: cover;
     border:solid 0px black;
     height:600px;
@@ -606,7 +610,7 @@
     border:solid 0px black;
 }
 .img-4-box{
-    background: url("../image/mini-desktop.svg") no-repeat;
+    background: url("../images/mini-desktop.svg") no-repeat;
     background-size: cover;
     border:solid 0px black;
     height:600px;

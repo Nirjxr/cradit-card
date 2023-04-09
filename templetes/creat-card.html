@@ -61,10 +61,12 @@
         {
             document.getElementById("ccage").innerHTML=" "
         }
+   
         function checkpassword(data){
             
             let password=document.getElementById('ccpass').value;
-           document.getElementById('ccpassword').innerHTML=password;
+            document.getElementById('cccheck').style.position="absolute";
+           //document.getElementById('ccpassword').innerHTML=password;
            // document.getElementById('cccheck').innerHTML="password strength";
             let strongPassword = new RegExp('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})')
             if(password.match(strongPassword))
@@ -89,22 +91,24 @@
 <body>
     {% include 'title.html' %}
     <div class="container cc-main-box">      
-        <form class="row cc-sub-box" name="nikkForm" action="www.youtube.com" method="post" onsubmit="return checkdata(this)">
+        <form class="row cc-sub-box" action='' method="POST" onsubmit="return checkdata(this)">
+            {% csrf_token %}
             <div class="col-sm-3 img-box">    
             </div>
             <div class="col-sm-7 cc-right-box">
                 <div class="row">
                     <div class="col-lg-12">
                         <h1>registration-form</h1>
+                        {{n}}
                     </div>
                     <div class="col-lg-6">
                         <p>first name</p>
-                        <input type="text" class="cc-input-box" placeholder="Please Enter Your Name" required="required">
+                        <input type="text" class="cc-input-box" placeholder="Please Enter Your Name" required="required" name="fname">
                     </div>
                     
                     <div class="col-lg-6">
                         <p>last name</p>
-                        <input type="text" class="cc-input-box"placeholder="last name " required="required">
+                        <input type="text" class="cc-input-box"placeholder="last name " required="required" name="lname">
                     </div>
                     
                     <div class="col-lg-6">
@@ -119,17 +123,17 @@
                     
                     <div class="col-lg-6">
                         <p>lanline-number(optional)</p>
-                        <input type="text" class="cc-input-box" placeholder="+911 xxx-xxx-xxxx">
+                        <input type="text" class="cc-input-box" placeholder="+911 xxx-xxx-xxxx" name="alt_number">
                     </div>
                     
                     <div class="col-lg-6">
                         <p>E-mail</p>
-                        <input type="email" class="cc-input-box" placeholder="xyz@gmail.com" required="required">
+                        <input type="email" class="cc-input-box" placeholder="xyz@gmail.com" required="required" name="email">
                     </div>
                     
                     <div class="col-lg-6">
                         <p>Country</p>
-                        <select type="text" class="cc-input-box" placeholder="Please Enter Your">
+                        <select type="text" class="cc-input-box" placeholder="Please Enter Your" name="country">
                             <option>india</option>
                             <option>pakistan</option>
                             <option>chin</option>
@@ -145,7 +149,7 @@
                     
                     <div class="col-lg-6">
                         <p id="ccpassword">password</p>
-                        <input type="password" class="cc-input-box" required="required" name="ccpass" id="ccpass" oninput="return checkpassword(this)"><i id="cccheck"></i>
+                        <input type="password" class="cc-input-box" required="required" name="ccpass" id="ccpass" oninput="return checkpassword(this)"><br/><i id="cccheck"></i>
                         <span id="ccpasstext"></span>
                     </div>
                     <div class="col-lg-12 cc-radio-main-box">
