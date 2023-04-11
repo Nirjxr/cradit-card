@@ -1,0 +1,100 @@
+.cc-main-box{
+    border:solid 0px black;
+    box-shadow: 3px 3px 15px rgb(0, 26, 52);
+    height:40%;
+    width:80%;
+}
+.img-box{
+    /* border:solid 3px green; */
+    /* width:27%; */
+    margin:0px;
+    padding: 0px;
+    background: url("../images/CC-IMG.jpg") no-repeat;
+    background-size: cover;
+
+}
+.img-box img{
+    width: 100%;
+    height: 100%;
+}
+.cc-right-box{
+    border:solid 0px red;
+    margin-left: auto;
+    
+}
+.cc-right-box h1{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #4CA4FF;
+    font-size: 2rem;
+    padding-top:30px;
+    margin: 0px;
+}
+.cc-sub-box p{
+    border:solid 0px red;
+    width: fit-content;
+    padding: 0px;
+    margin: 0px;
+    text-transform: capitalize;
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.cc-sub-box{
+    /* width:60%; */
+    background-color: #B7D1EC;
+    /* border: solid 0px blue; */
+    /* margin-left: auto; */
+}
+.cc-input-box{
+    /* background-color: #000000; */
+    border-radius: 10px;
+    border: 0px;
+    width:90%;
+    margin-top: 10px;
+    height: 30px;
+    border: none;
+
+}
+#cc-radio-f-box{
+    margin-left:0px;    
+   
+}
+.cc-radio-box{
+    margin-left: 10%;
+    margin-top: 20px;
+    accent-color:  black;
+}
+#cc-button{
+ /* border: solid 1px black; */
+ width:80%;
+ height:35px;
+ margin-top: 20px;
+ text-transform: uppercase;
+ font-weight: 600;
+ border: 0px; 
+ background-color: #4CA4FF; 
+ transition: all 1s ; 
+ margin-bottom: 10px;
+}
+#cc-button:hover{
+    background-color: #1f8bff;
+    letter-spacing: 1px;
+}
+#cccheck{
+    color:black;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+@media screen and (max-width: 570px) {
+    .img-box{
+
+        height: 200px;
+        background: url("../images/cc-img-2.png") no-repeat;
+        background-size: cover;
+    
+    }
+  }

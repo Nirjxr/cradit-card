@@ -1,0 +1,43 @@
+     /* navigation data */
+     .main-nav{
+        background-color: #4629c6;
+    }
+    .main-nav a{
+        font-weight: 600;
+        text-transform: uppercase;
+        padding-right:50px;
+        transition: color 0.5s 0s ease-in-out;
+        flex: 0 0 auto;
+        width: 10.666667%;
+    }
+    .main-nav a:hover{
+        color: #000000;
+        background-color: #8171c5;
+    }
+ 
+    .nav-data{
+        
+        color: white;
+
+    }
+    .nav-data :hover{
+        color: #8b8b8b;
+    }
+    .nav {
+        --bs-nav-link-hover-color: #000000;
+    }
+    .d-flex{
+     height: 30px;
+     margin-top: 5PX;
+    
+    }
+    .nav-image{
+        height: 30px;
+        position: absolute;
+        right:35px;
+        top:5px;
+    }
+    .btn{
+        border:0px;
+        
+    }

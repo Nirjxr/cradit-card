@@ -1,7 +1,7 @@
 from django.http import HttpResponse 
 from django.shortcuts import render,redirect
 from login.models import UserInfo
-from registrationdata.models import Registaration
+from login.models import Registaration
 
 
 
